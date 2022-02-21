@@ -23,7 +23,7 @@ end
 
 bot.message do |event|
 channel = event.channel.id
-if channel == 810027865500024852
+if channel == <ここにBOTが反応して欲しいDiscordのチャンネルIDを入れる>
   bot_message = event.message.content
   push_line(add_message(event.user.display_name, bot_message))
   # messageだけ送信したい場合
@@ -40,7 +40,7 @@ def push_line(message)
   request.content_type = "application/json"
   request["Authorization"] = "Bearer #{ENV["LINE_CHANNEL_TOKEN"]}"
   request.body = JSON.dump({
-    "to" => "C37a70984e016a6fefbe80c5a3788640a",
+    "to" => "<ここに送信したいLineのグループIDを入れる>",
     "messages" => [
       {
         "type" => "text",
