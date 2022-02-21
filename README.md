@@ -2,3 +2,5 @@
 
 
 ### 参考にしたサイト https://zenn.dev/tama8021/articles/0801_sinatra_line_discord
+
+#### Herokuで動かすことを前提としてるよ
